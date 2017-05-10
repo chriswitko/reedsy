@@ -1,0 +1,12 @@
+node_modules
+coverage
+logs
+integration-test
+build
+.vscode
+*.sw*
+*~
+bin/
+.sass-cache
+.DS_STORE
+npm-debug.log

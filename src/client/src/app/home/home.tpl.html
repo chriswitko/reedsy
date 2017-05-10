@@ -1,0 +1,37 @@
+<div class="header-container container">
+  <div class="row">
+    <div class="col-xs-6">
+      <h1>Conversions</h1>
+    </div>
+    <div class="col-xs-6 align-right">
+      <button type="button" class="btn btn-md btn-primary" ng-click="home.newPDF()">New PDF Conversion</button>
+      <button type="button" class="btn btn-md btn-success" ng-click="home.newHTML()">New HTML Conversion</button>
+    </div>
+  </div>
+</div>
+
+<div class="conversions-container container">
+  <div class="row">
+    <div class="col-xs-12">
+      <table class="table-results table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th width="200">Created At</th>
+            <th width="100">Type</th>
+            <th width="150">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="conversion in home.conversions track by $index">
+            <td>{{conversion.name}}</td>
+            <td nowrap>{{conversion.createdAt | date:'MMM d, y h:mm:ss a'}}</td>
+            <td><label code="conversion.type"></label></td>
+            <td nowrap><status code="conversion.status"></status></td>
+          </tr>
+        </tbody>
+      </table>
+      </table>
+    </div>
+  </div>
+</div>

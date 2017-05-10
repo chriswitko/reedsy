@@ -1,0 +1,6 @@
+<div ng-switch="vm.code">
+  <div ng-switch-when="Processing"><i class="fa fa-spin fa-refresh"></i> {{vm.code}}</div>
+  <div ng-switch-when="Processed"><i class="fa fa-check"></i> {{vm.code}}</div>
+  <div ng-switch-default><i class="fa fa-clock-o"></i> {{vm.code}}</div>
+</div>
+  
